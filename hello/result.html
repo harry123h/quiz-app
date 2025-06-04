@@ -1,0 +1,28 @@
+<!-- result.html (Quiz Result Page) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Results</title>
+  <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Completed!</h1>
+    <p id="resultSummary"></p>
+    <ul id="answerReview"></ul>
+  </div>
+  <script>
+    const score = localStorage.getItem('quizScore');
+    const answers = JSON.parse(localStorage.getItem('userAnswers'));
+    document.getElementById('resultSummary').textContent = `You scored ${score} out of 20.`;
+    const list = document.getElementById('answerReview');
+    answers.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.textContent = `Q${index + 1}: ${item.question} | Your answer: ${item.selected} | Correct: ${item.correct}`;
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>

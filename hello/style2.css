@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Base Reset and Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Background Styling */
+body {
+  background: url('https://images.unsplash.com/photo-1601315576601-c3f5f510fd3b?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container styling */
+.container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Title styling */
+.container h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Description styling */
+.container p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* Label styling */
+.container label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+/* Input styling */
+.container input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.container input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Button styling */
+.container button {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover/toggle effect */
+.container button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: url('Screenshot 2025-06-02 024202.png') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Add a semi-transparent overlay on top */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* black with 50% opacity */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Your actual content */
+.content {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); /* optional light background */
+  border-radius: 10px;
+}
