@@ -317,7 +317,7 @@
     const username = localStorage.getItem('quizUser') || 'User';
     document.getElementById('quizTitle').textContent = `Hello, ${username}! Let's begin your quiz.`;
 
-    let quizSet = questions.sort(() => 0.5 - Math.random()).slice(0, 20);
+    let quizSet = questions.sort(() => 0.5 - Math.random()).slice(0, 10);
     let current = 0;
     let score = 0;
     let userAnswers = [];
